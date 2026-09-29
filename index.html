@@ -1,37 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Oliwiera</title>
+    <title>Oliwier – 100 pomysłów</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Witaj na mojej stronie!</h1>
-        <p>To jest moja pierwsza strona internetowa.</p>
-    </header>
+<header class="hero">
+    <nav>
+        <div class="logo">OLIWIER</div>
 
-    <main>
-        <section>
-            <h2>O mnie</h2>
-            <p>Cześć! Mam na imię Oliwier. To moja własna strona internetowa.</p>
-        </section>
+        <div class="nav-links">
+            <a href="#plakat">Plakat</a>
+            <a href="#pomysly">100 pomysłów</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+    </nav>
 
-        <section>
-            <h2>Moje zainteresowania</h2>
-            <p>Technologia, komputery, sztuczna inteligencja i programowanie.</p>
-        </section>
+    <div class="hero-content">
 
-        <button onclick="alert('Cześć! 👋')">Kliknij mnie</button>
-    </main>
+        <div>
+            <p class="eyebrow">STRONA KAMPANII</p>
 
-    <footer>
-        <p>© 2026 Moja strona</p>
-    </footer>
+            <h1>
+                100 pomysłów<br>
+                <span>na lepszą szkołę</span>
+            </h1>
 
-</body>
-</html>
+            <p class="lead">
+                Pomysły, które możemy wspólnie zamienić
+                w konkretne działania.
+            </p>
+
+            <a class="button" href="#pomysly">
+                Zobacz 100 pomysłów ↓
+            </a>
+        </div>
+
+        <div class="poster-card" id="plakat">
+            <img src="plakat.png" alt="Plakat Oliwiera">
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="intro">
+
+    <p class="eyebrow">MÓJ PLAN</p>
+
+    <h2>100 pomysłów. Jeden cel.</h2>
+
+    <p>
+        Chcę zebrać pomysły dotyczące codziennego życia
+        w szkole – od przerw i wydarzeń po naukę,
+        sport i integrację.
+    </p>
+
+</section>
+
+
+<section id="pomysly" class="ideas-section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">LISTA</p>
+            <h2>100 pomysłów</h2>
+        </div>
+
+        <div class="counter">
+            100
+        </div>
+
+    </div>
+
+    <div id="ideas" class="ideas-grid"></div>
+
+</section>
+
+
+<section id="kontakt" class="cta">
+
+    <p class="eyebrow">RAZEM</p>
+
+    <h2>Masz własny pomysł?</h2>
+
+    <p>
+        Najlepsza lista pomysłów powstaje wtedy,
+        gdy każdy może coś dorzucić.
+    </p>
+
+    <a class="button" href="#pomysly">
+        Zobacz pom
