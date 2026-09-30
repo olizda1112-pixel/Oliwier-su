@@ -1,15 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Oliwier – 100 pomysłów</title>
+
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
 <header class="hero">
+
     <nav>
         <div class="logo">OLIWIER</div>
 
@@ -20,9 +25,11 @@
         </div>
     </nav>
 
+
     <div class="hero-content">
 
         <div>
+
             <p class="eyebrow">STRONA KAMPANII</p>
 
             <h1>
@@ -38,17 +45,27 @@
             <a class="button" href="#pomysly">
                 Zobacz 100 pomysłów ↓
             </a>
+
         </div>
 
+
+        <!-- PLAKAT -->
+
         <div class="poster-card" id="plakat">
+
             <img src="plakat.png" alt="Plakat Oliwiera">
+
         </div>
 
     </div>
+
 </header>
 
 
 <main>
+
+
+<!-- WSTĘP -->
 
 <section class="intro">
 
@@ -65,14 +82,21 @@
 </section>
 
 
+
+<!-- 100 POMYSŁÓW -->
+
 <section id="pomysly" class="ideas-section">
 
     <div class="section-heading">
 
         <div>
+
             <p class="eyebrow">LISTA</p>
+
             <h2>100 pomysłów</h2>
+
         </div>
+
 
         <div class="counter">
             100
@@ -80,21 +104,202 @@
 
     </div>
 
+
     <div id="ideas" class="ideas-grid"></div>
 
 </section>
 
 
+
+<!-- KONTAKT -->
+
 <section id="kontakt" class="cta">
 
-    <p class="eyebrow">RAZEM</p>
+    <p class="eyebrow">KONTAKT</p>
 
     <h2>Masz własny pomysł?</h2>
 
     <p>
-        Najlepsza lista pomysłów powstaje wtedy,
-        gdy każdy może coś dorzucić.
+        Masz pomysł dotyczący naszej szkoły?
+        Skontaktuj się ze mną!
     </p>
 
-    <a class="button" href="#pomysly">
-        Zobacz pom
+
+    <p>
+        📧
+        <a href="mailto:olizda1112@gmail.com">
+            olizda1112@gmail.com
+        </a>
+    </p>
+
+
+    <p>
+        📱
+        <a href="tel:665469861">
+            665 469 861
+        </a>
+    </p>
+
+</section>
+
+
+</main>
+
+
+<!-- STOPKA -->
+
+<footer>
+
+    <p>
+        © 2026 Oliwier • 100 pomysłów
+    </p>
+
+</footer>
+
+
+
+<script>
+
+/* 100 POMYSŁÓW */
+
+const ideas = [
+
+"Więcej ciekawych dni tematycznych",
+"Dzień bez plecaka",
+"Dzień sportu",
+"Turniej piłki nożnej",
+"Turniej siatkówki",
+"Turniej koszykówki",
+"Turniej tenisa stołowego",
+"Szkolny turniej szachowy",
+"Więcej aktywnych przerw",
+"Muzyka podczas wybranych przerw",
+
+"Strefa relaksu",
+"Kącik planszówek",
+"Szkolny klub filmowy",
+"Wieczór filmowy",
+"Dzień talentów",
+"Szkolny konkurs talentów",
+"Konkurs fotograficzny",
+"Konkurs plastyczny",
+"Konkurs muzyczny",
+"Konkurs wiedzy",
+
+"Quizy między klasami",
+"Escape room w szkole",
+"Dzień gier planszowych",
+"Dzień gier komputerowych",
+"Dzień języków obcych",
+"Dzień nauki",
+"Dzień eksperymentów",
+"Dzień zdrowego jedzenia",
+"Dzień hobby",
+"Dzień kolorów",
+
+"Dzień piżamy",
+"Dzień ulubionej postaci",
+"Dzień sportowej koszulki",
+"Szkolny kalendarz wydarzeń",
+"Tablica z pomysłami uczniów",
+"Skrzynka anonimowych pomysłów",
+"Głosowanie na wydarzenia",
+"Regularne konsultacje z uczniami",
+"Spotkania przedstawicieli klas",
+"Więcej informacji o wydarzeniach",
+
+"Szkolne wiadomości",
+"Tablica sukcesów uczniów",
+"Galeria prac uczniowskich",
+"Wystawa prac uczniowskich",
+"Gazetka szkolna",
+"Szkolny podcast",
+"Szkolny kanał informacyjny",
+"Wywiady z uczniami",
+"Wywiady z nauczycielami",
+"Dzień samorządu",
+
+"Debata uczniowska",
+"Budżet na inicjatywy uczniowskie",
+"Małe projekty klasowe",
+"Wspólne akcje charytatywne",
+"Zbiórki dla potrzebujących",
+"Akcja pomagamy zwierzętom",
+"Zbiórka książek",
+"Zbiórka gier planszowych",
+"Wymiana książek",
+"Wymiana roślin",
+
+"Szkolny kiermasz",
+"Kiermasz prac uczniów",
+"Akcja ekologiczna",
+"Więcej segregacji odpadów",
+"Zbiórka elektrośmieci",
+"Dzień bez plastiku",
+"Sadzenie roślin",
+"Zielony kącik w szkole",
+"Opieka nad szkolnymi roślinami",
+"Mapa ciekawych miejsc w okolicy",
+
+"Wycieczki tematyczne",
+"Wyjścia edukacyjne",
+"Spotkania z ciekawymi osobami",
+"Spotkania z lokalnymi sportowcami",
+"Spotkania z pasjonatami",
+"Miniwarsztaty uczniowskie",
+"Uczniowie uczą uczniów",
+"Darmowe materiały do nauki",
+"Bank notatek",
+"Tablica z poradami do nauki",
+
+"Wspólna nauka przed sprawdzianami",
+"Koło pomocy koleżeńskiej",
+"Klub matematyczny",
+"Klub języka angielskiego",
+"Klub informatyczny",
+"Klub naukowy",
+"Klub sportowy",
+"Klub artystyczny",
+"Klub muzyczny",
+"Klub gier planszowych",
+
+"Szkolna liga klas",
+"Ranking aktywności klas",
+"Nagrody za udział w wydarzeniach",
+"Dyplomy za inicjatywy",
+"Podziękowania dla wolontariuszy",
+"Szkolny dzień wdzięczności",
+"Ściana dobrych wiadomości",
+"Tablica pozytywnych komentarzy",
+"Akcja dobre słowo",
+"Więcej integracji między klasami"
+
+];
+
+
+/* WYŚWIETLANIE POMYSŁÓW */
+
+const container = document.getElementById("ideas");
+
+
+ideas.forEach((idea, index) => {
+
+    const card = document.createElement("article");
+
+    card.className = "idea";
+
+    card.innerHTML = `
+        <span>${String(index + 1).padStart(2, "0")}</span>
+        <p>${idea}</p>
+    `;
+
+    container.appendChild(card);
+
+});
+
+</script>
+
+
+</body>
+
+</html>
